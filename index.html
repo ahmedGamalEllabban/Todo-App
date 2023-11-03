@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 500px;
+        padding: 10px;
+        margin: 20px auto;
+        background-color: #eee;
+        min-height: 90vb;
+        border-radius: 10px;
+      }
+      @media (max-width: 767px) {
+        .container {
+          width: 350px;
+        }
+      }
+
+      .task-addition {
+        padding: 10px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .task-addition input {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .task-addition input:focus {
+        outline: none;
+      }
+      .task-addition button {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #00c763;
+        color: white;
+        cursor: pointer;
+      }
+      .task-viewer {
+        margin: 10px;
+        padding: 10px;
+      }
+      .task {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .task span {
+        justify-self: flex-start;
+        font-size: 20px;
+      }
+
+      .task .delete {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        border: none;
+        background-color: #c70000;
+        color: white;
+        cursor: pointer;
+      }
+      .task .done {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f0c400;
+        color: white;
+        cursor: pointer;
+      }
+
+      .is-done span {
+        color: #696969;
+        text-decoration: line-through;
+        transition: 300ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="task-addition">
+        <input type="text" placeholder="Write Your Task" />
+        <button id="addTask">Add Task</button>
+      </div>
+      <div class="task-viewer">
+        <div class="no-tasks"></div>
+      </div>
+    </div>
+    <!--Js Corner-->
+    <!--Js Corner-->
+    <!--Js Corner-->
+    <!--Js Corner-->
+    <!--Js Corner-->
+    <script src="script/script.js"></script>
+  </body>
+</html>
